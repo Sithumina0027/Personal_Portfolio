@@ -1,0 +1,67 @@
+.contact {
+  background: var(--surface);
+  scroll-margin-top: 45px;
+}
+
+.contact-row {
+  margin-top: 45px;
+}
+
+.contact-form {
+  background: linear-gradient(135deg, var(--surface-2), var(--surface));
+  padding: 40px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.contact-form .form-control {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 12px 15px;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.contact-form .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.contact-form .form-control:focus {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--theme);
+  color: var(--text);
+  box-shadow: 0 0 0 0.2rem rgba(115, 80, 255, 0.25);
+}
+
+.contact-form .form-control:valid {
+  border-color: var(--theme);
+}
+
+.submit-btn {
+  background: linear-gradient(90deg, var(--theme), var(--theme-muted));
+  color: var(--surface);
+  border: none;
+  padding: 12px 35px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(135deg, var(--theme-dark), var(--theme));
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .contact-form {
+    padding: 25px;
+  }
+
+  .submit-btn {
+    padding: 10px 20px;
+  }
+}
