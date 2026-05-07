@@ -11,7 +11,7 @@ import { Footer } from "./Components/Footer";
 
 function App() {
   return (
-    <Router basename="/Portfolio">
+    <Router basename="/Personal_Portfolio">
       <div className="App">
         <NavBar />
         <Banner />

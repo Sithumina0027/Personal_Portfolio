@@ -2,7 +2,7 @@
   "name": "react-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Sithumina0027.github.io/Portfolio",
+  "homepage": "https://Sithumina0027.github.io/Personal_Portfolio",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@testing-library/dom": "^10.4.1",
