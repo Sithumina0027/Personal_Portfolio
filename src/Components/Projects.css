@@ -185,6 +185,10 @@
     padding: 60px 30px;
   }
 
+  .projects-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .section-title {
     font-size: 2.2rem;
   }

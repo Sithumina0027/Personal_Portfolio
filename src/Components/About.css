@@ -2,6 +2,7 @@
   background: var(--surface);
   position: relative;
   scroll-margin-top: 45px;
+  padding: 80px 0;
 }
 
 .about-bx h2 {
@@ -82,6 +83,31 @@
  
 .about-text {
   padding: 0 30px;
+}
+
+.about-text h5 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 10px;
+}
+
+.education-year {
+  font-size: 0.9rem;
+  color: var(--theme-muted);
+  margin-top: 5px !important;
+}
+
+.focus-list {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  color: var(--muted);
+}
+
+.focus-list li {
+  padding: 4px 0;
+  color: var(--muted);
 }
 
 .about-text p {
