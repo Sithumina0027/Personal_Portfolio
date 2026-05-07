@@ -3,6 +3,7 @@
   border-top: 1px solid var(--border);
   padding: 50px  20px;
   color: var(--muted);
+  scroll-margin-top: var(--navbar-height);
 }
 
 .footer-content {

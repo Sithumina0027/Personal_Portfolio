@@ -15,15 +15,23 @@ export const NavBar = () => {
   const [expanded, setExpanded] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    }
+    let ticking = false;
 
-    window.addEventListener("scroll", onScroll);
+    const updateScrolled = () => {
+      const shouldScroll = window.scrollY > 50;
+      setScrolled((current) => (current === shouldScroll ? current : shouldScroll));
+      ticking = false;
+    };
+
+    const onScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(updateScrolled);
+        ticking = true;
+      }
+    };
+
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
 
     return () => window.removeEventListener("scroll", onScroll);
   }, [])

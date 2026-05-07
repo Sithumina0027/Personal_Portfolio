@@ -28,6 +28,7 @@ html {
 }
 
 :root {
+  --navbar-height: 76px;
   --bg: #03030a;
   --surface: #090617;
   --surface-2: #120c2c;
@@ -43,12 +44,12 @@ html {
 
 body {
   font-weight: 400;
-  overflow-x: hidden;
+  overflow-x: clip;
   position: relative;
   background-color: var(--bg) !important;
   color: var(--text) !important;
   font-family: 'Centra', sans-serif !important;
-  padding-top: 75px;
+  padding-top: var(--navbar-height);
 }
 
 h1, h2, h3, h4, h5, h6 {

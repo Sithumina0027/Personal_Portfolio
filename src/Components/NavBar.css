@@ -7,6 +7,9 @@
   left: 0;
   width: 100%;
   z-index: 1000;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  will-change: transform;
 }
 .custom-navbar.scrolled{
   box-shadow: 0 2px 12px rgba(0,0,0,0.6);
@@ -51,6 +54,19 @@
 .connect-link{ display:inline-block }
 
 @media(max-width: 768px){
+  .custom-navbar{
+    padding: 0.6rem 0;
+  }
+
+  .navbar-collapse{
+    margin-top: 0.75rem;
+    padding: 1rem;
+    border-radius: 16px;
+    background: rgba(3, 3, 10, 0.96);
+    border: 1px solid rgba(115, 80, 255, 0.15);
+  }
+
   .nav-links{ margin-top: 0.5rem; }
-  .social-icons{ margin-top: 0.5rem; }
+  .social-icons{ margin-top: 0.75rem; justify-content: center; flex-wrap: wrap; }
+  .connect-btn{ width: 100%; margin-top: 0.75rem; }
 }
